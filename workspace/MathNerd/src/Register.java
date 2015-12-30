@@ -1,7 +1,6 @@
 
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 
 import javax.servlet.ServletException;
@@ -58,6 +57,7 @@ public class Register extends HttpServlet {
 		
 		if (firstName.length() > 1 && firstName.matches("^[A-Z][a-z]+$")){
 			validFirstName = true;
+			request.setAttribute("firstName", firstName);
 		}
 		else {
 			validFirstName = false;
@@ -66,6 +66,7 @@ public class Register extends HttpServlet {
 		
 		if (lastName.length() > 1 && lastName.matches("^[A-Z][a-z]+$")){
 			validLastName = true;
+			request.setAttribute("lastName", lastName);
 		}
 		else {
 			validLastName = false;
@@ -74,6 +75,7 @@ public class Register extends HttpServlet {
 		
 		if (email.matches("[A-Za-z0-9[!#$%&'()*+,/]]+@[A-Za-z0-9[!#$%&'()*+,/]]+[\\.][A-Za-z]+$")) {
 			validEmail = true;
+			request.setAttribute("email", email);
 		}
 		else {
 			validEmail = false;
@@ -85,7 +87,7 @@ public class Register extends HttpServlet {
 		}
 		else{
 			validPassword = false;
-			request.setAttribute("passwordError", "Error: Password must be contain at least one number and one special character.");
+			request.setAttribute("passwordError", "Error: Password must be contain at least one number and one special character and password must be longer than 1 character.");
 		}
 		
 		if (password2.equals(password1)) {
@@ -109,5 +111,4 @@ public class Register extends HttpServlet {
 			doGet(request, response);	
 		}
 	}
-
 }
