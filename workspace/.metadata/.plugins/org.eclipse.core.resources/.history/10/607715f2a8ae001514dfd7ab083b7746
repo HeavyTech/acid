@@ -35,30 +35,7 @@
  					<button class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button> 
  				</form> 
  			</div> 
- 		</div>
- 		<div class="footer">
-			<table  class="footer-table" style="width:30%" align="center">
-				<tr>
-               		<th style="text-align:center">Company Information</th>
-               		<th style="text-align:center">Contact us</th>
-               		<th style="text-align:center">News</th>
-             	</tr>
-             
-             	<tr>
-             		<td>Mission Statement</td>
-             		<td>Facebook</td>
-             		<td>Updates</td>
-             	</tr>
-   
-             	<tr>
-             		<td>Careers</td>
-             		<td>Twitter</td>
-             		<td></td>
-            	</tr>
-             	  
-			</table>
-	
-		</div> 
+ 		</div> 
 	</div> 
 </body> 
 </html> 
