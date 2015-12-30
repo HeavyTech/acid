@@ -1,0 +1,16 @@
+INSTUPgenesis
+C:\Users\Maximiliano\Documents\acid\games\CatchASpot\src\genesis.py
+INFOS:&&3|1|2|0&&3|3|2|0&&1|4|2|0&&2|5|2|4&&3|6|2|7&&3|8|2|7&&2|9|2|4&&2|10|2|4&&2|11|2|4&&3|8|2|12&&3|13|2|0
+game=13
+mainLoop=11
+color_black=3
+screen=6
+update=9
+draw=10
+genesis=2
+Game=4
+Game.__init__=7
+quit=8
+__init__=5
+screen_mode=1
+Game.mainLoop=12

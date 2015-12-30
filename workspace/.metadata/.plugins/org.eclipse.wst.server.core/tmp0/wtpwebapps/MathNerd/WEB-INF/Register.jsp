@@ -29,21 +29,21 @@
 								<div class="alert alert-danger" role="alert"> ${firstNameError}</div>
 							</c:if>
 							
-							<input type="text" class="form-control" name="firstName" value="" id="firstName" placeholder="First Name" />
+							<input type="text" class="form-control" name="firstName" value="${firstName}" id="firstName" placeholder="First Name" />
 						</div>
 						<div class="form-group">
 							<label for="lastName">Last Name</label>
 							<c:if test="${!empty lastNameError}">
 								<div class="alert alert-danger" role="alert"> ${lastNameError}</div>
 							</c:if>
-							<input type="text" class="form-control" name="lastName" value="" id="lastName" placeholder="Last Name" />
+							<input type="text" class="form-control" name="lastName" value="${lastName}" id="lastName" placeholder="Last Name" />
 						</div>
 						<div class="form-group">
 							<label for="email">Email Address</label>
 							<c:if test="${!empty emailError}">
 								<div class="alert alert-danger" role="alert"> ${emailError}</div>
 							</c:if>
-							<input type="email" class="form-control" name="email" value="" id="email" placeholder="Email">
+							<input type="email" class="form-control" name="email" value="${email}" id="email" placeholder="Email">
 						</div>
 		  			    <div class="form-group">
 							<label for="password1">Password</label>
