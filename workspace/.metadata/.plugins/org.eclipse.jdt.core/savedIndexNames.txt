@@ -34,7 +34,6 @@ INDEX VERSION 1.127+C:\Users\Maximiliano\Documents\acid\workspace\.metadata\.plu
 2257783697.index
 1091302515.index
 294246746.index
-1792324335.index
 1923297441.index
 3414683811.index
 2959957318.index
