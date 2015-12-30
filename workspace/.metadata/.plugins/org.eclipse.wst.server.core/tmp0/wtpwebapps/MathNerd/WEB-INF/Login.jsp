@@ -6,7 +6,7 @@
 <head> 
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> 
  	<title>Login MathNerd</title> 
- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head> 
 <body> 
  	<div class="container"> 
@@ -36,28 +36,29 @@
  				</form> 
  			</div> 
  		</div>
- 		<div class="footer">
-			<table  class="footer-table" style="width:30%" align="center">
-				<tr>
-               		<th style="text-align:center">Company Information</th>
-               		<th style="text-align:center">Contact us</th>
-               		<th style="text-align:center">News</th>
-             	</tr>
-             
-             	<tr>
-             		<td>Mission Statement</td>
-             		<td>Facebook</td>
-             		<td>Updates</td>
-             	</tr>
-   
-             	<tr>
-             		<td>Careers</td>
-             		<td>Twitter</td>
-             		<td></td>
-            	</tr>
-             	  
-			</table>
-	
+ 		<br />
+ 		<br />
+ 		<br /><br />
+ 		<br />
+ 		<br />
+ 		<br />
+ 		<div class="panel-footer col-md-12">
+ 			<div class="footer">
+ 				<div class="col-md-4">
+ 					<h4>Company Information:</h4>
+ 					<h5><a>Mission Statement</a></h5>
+ 					<h5><a>Careers</a></h5> 				
+ 				</div>
+ 				<div class="col-md-4">
+ 					<h4>Contact Us:</h4>
+ 					<h5><a>Facebook</a></h5>
+ 					<h5><a>Twitter</a></h5> 				
+ 				</div>
+ 				<div class="col-md-4">
+ 					<h4>News:</h4>
+ 					<h5><a>Updates</a></h5>				
+ 				</div>
+			</div>
 		</div> 
 	</div> 
 </body> 

@@ -1,0 +1,54 @@
+
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+@WebServlet("/Home")
+public class Home extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    public Home() {
+        super();
+    }
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		HttpSession session = request.getSession();
+		User currentUser = (User)session.getAttribute("CurrentUser");
+		
+		if (currentUser == null) {
+			response.sendRedirect("http://localhost:8080/MathNerd/Login");
+			return;
+		}
+		
+		int firstVariable = (int) (Math.random() * 100);
+		int secondVariable = (int) (Math.random() * 100);
+		
+		request.setAttribute("firstVariable", firstVariable);
+		request.setAttribute("secondVariable", secondVariable);
+		
+		request.getRequestDispatcher("/WEB-INF/Home.jsp").forward(request, response);
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		int firstVariable = Integer.parseInt(request.getParameter("firstVariable"));
+		int secondVariable = Integer.parseInt(request.getParameter("secondVariable"));
+		int usersAnswer = Integer.parseInt(request.getParameter("answer"));
+		
+		int correctAnswer = firstVariable + secondVariable;
+		
+		if (usersAnswer == correctAnswer) {
+			request.setAttribute("answerSuccess", "You have Answered Correctly.");
+			
+			//add a point to the users score
+			//manage all features
+		}
+		
+		request.getRequestDispatcher("/WEB-INF/ChallengeComplete.jsp").forward(request, response);
+	}
+}
